@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Dim filePath As String = "C:\TestFolder\test.txt"
+    Dim filePath As String = "C:\KataLeen\test.txt"
     Dim randomNumber As Integer
 
     Private Sub readRandomSentence()
@@ -27,8 +27,8 @@
                     currentLineNumber += 1
                 Catch ex As Microsoft.VisualBasic.
                             FileIO.MalformedLineException
-                    MsgBox("Line " & ex.Message &
-                    "is not valid and will be skipped.")
+                    MessageBox.Show("Baris " & ex.Message &
+                    "tidak valid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End Try
             End While
         End Using
@@ -56,8 +56,8 @@
                     currentLineNumber += 1
                 Catch ex As Microsoft.VisualBasic.
                             FileIO.MalformedLineException
-                    MsgBox("Line " & ex.Message &
-                    "is not valid and will be skipped.")
+                    MessageBox.Show("Baris " & ex.Message &
+                    "tidak valid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End Try
             End While
         End Using
@@ -66,6 +66,9 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnSimpan.Visible = False
+        btnUbahKatalis1.Visible = True
+        btnUbahKatalis2.Visible = True
+        btnUbahKatalis3.Visible = True
         readRandomSentence()
     End Sub
 
@@ -76,8 +79,6 @@
 
     Private Sub TentangKataLeenToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles TentangKataLeenToolStripMenuItem.Click
         Dim aboutBoxForm As New AboutBox1()
-
-        ' Tampilkan AboutBox sebagai dialog
         aboutBoxForm.ShowDialog()
     End Sub
 
@@ -92,7 +93,7 @@
             lines.Add(newLine)
             System.IO.File.WriteAllLines(filePath, lines)
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
         readLastAddedSentence()
     End Sub
