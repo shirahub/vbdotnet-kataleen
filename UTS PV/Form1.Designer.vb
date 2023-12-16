@@ -25,24 +25,24 @@ Partial Class Form1
         MenuStrip1 = New MenuStrip()
         MenuToolStripMenuItem = New ToolStripMenuItem()
         BuatKatalisBaruToolStripMenuItem = New ToolStripMenuItem()
-        LihatSemuaKatalisToolStripMenuItem = New ToolStripMenuItem()
         KeluarToolStripMenuItem = New ToolStripMenuItem()
         HelpToolStripMenuItem = New ToolStripMenuItem()
         TentangKataLeenToolStripMenuItem = New ToolStripMenuItem()
         GroupBox1 = New GroupBox()
-        Button1 = New Button()
+        btnUbahKatalis1 = New Button()
         txtInspirasi = New TextBox()
         Label1 = New Label()
         btnRandom = New Button()
         GroupBox2 = New GroupBox()
-        Button3 = New Button()
+        btnUbahKatalis2 = New Button()
         Button2 = New Button()
         txtLatarBelakang = New TextBox()
         GroupBox3 = New GroupBox()
-        Button6 = New Button()
+        btnUbahKatalis3 = New Button()
         Button4 = New Button()
         Button5 = New Button()
         txtKelanjutan = New TextBox()
+        btnSimpan = New Button()
         MenuStrip1.SuspendLayout()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
@@ -60,7 +60,7 @@ Partial Class Form1
         ' 
         ' MenuToolStripMenuItem
         ' 
-        MenuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {BuatKatalisBaruToolStripMenuItem, LihatSemuaKatalisToolStripMenuItem, KeluarToolStripMenuItem})
+        MenuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {BuatKatalisBaruToolStripMenuItem, KeluarToolStripMenuItem})
         MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
         MenuToolStripMenuItem.Size = New Size(50, 20)
         MenuToolStripMenuItem.Text = "Menu"
@@ -68,19 +68,13 @@ Partial Class Form1
         ' BuatKatalisBaruToolStripMenuItem
         ' 
         BuatKatalisBaruToolStripMenuItem.Name = "BuatKatalisBaruToolStripMenuItem"
-        BuatKatalisBaruToolStripMenuItem.Size = New Size(176, 22)
+        BuatKatalisBaruToolStripMenuItem.Size = New Size(180, 22)
         BuatKatalisBaruToolStripMenuItem.Text = "Buat Katalis Baru"
-        ' 
-        ' LihatSemuaKatalisToolStripMenuItem
-        ' 
-        LihatSemuaKatalisToolStripMenuItem.Name = "LihatSemuaKatalisToolStripMenuItem"
-        LihatSemuaKatalisToolStripMenuItem.Size = New Size(176, 22)
-        LihatSemuaKatalisToolStripMenuItem.Text = "Lihat Semua Katalis"
         ' 
         ' KeluarToolStripMenuItem
         ' 
         KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        KeluarToolStripMenuItem.Size = New Size(176, 22)
+        KeluarToolStripMenuItem.Size = New Size(180, 22)
         KeluarToolStripMenuItem.Text = "Keluar"
         ' 
         ' HelpToolStripMenuItem
@@ -93,13 +87,13 @@ Partial Class Form1
         ' TentangKataLeenToolStripMenuItem
         ' 
         TentangKataLeenToolStripMenuItem.Name = "TentangKataLeenToolStripMenuItem"
-        TentangKataLeenToolStripMenuItem.Size = New Size(180, 22)
+        TentangKataLeenToolStripMenuItem.Size = New Size(167, 22)
         TentangKataLeenToolStripMenuItem.Text = "Tentang KataLeen"
         ' 
         ' GroupBox1
         ' 
         GroupBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        GroupBox1.Controls.Add(Button1)
+        GroupBox1.Controls.Add(btnUbahKatalis1)
         GroupBox1.Controls.Add(txtInspirasi)
         GroupBox1.Font = New Font("Segoe UI", 12.0F)
         GroupBox1.Location = New Point(26, 109)
@@ -109,16 +103,16 @@ Partial Class Form1
         GroupBox1.TabStop = False
         GroupBox1.Text = "Inspirasi"
         ' 
-        ' Button1
+        ' btnUbahKatalis1
         ' 
-        Button1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button1.Font = New Font("Segoe UI", 9.0F)
-        Button1.Location = New Point(579, 165)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(85, 29)
-        Button1.TabIndex = 1
-        Button1.Text = "Ubah"
-        Button1.UseVisualStyleBackColor = True
+        btnUbahKatalis1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnUbahKatalis1.Font = New Font("Segoe UI", 9.0F)
+        btnUbahKatalis1.Location = New Point(579, 165)
+        btnUbahKatalis1.Name = "btnUbahKatalis1"
+        btnUbahKatalis1.Size = New Size(85, 29)
+        btnUbahKatalis1.TabIndex = 1
+        btnUbahKatalis1.Text = "Ubah"
+        btnUbahKatalis1.UseVisualStyleBackColor = True
         ' 
         ' txtInspirasi
         ' 
@@ -154,7 +148,7 @@ Partial Class Form1
         ' GroupBox2
         ' 
         GroupBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        GroupBox2.Controls.Add(Button3)
+        GroupBox2.Controls.Add(btnUbahKatalis2)
         GroupBox2.Controls.Add(Button2)
         GroupBox2.Controls.Add(txtLatarBelakang)
         GroupBox2.Font = New Font("Segoe UI", 12.0F)
@@ -165,16 +159,16 @@ Partial Class Form1
         GroupBox2.TabStop = False
         GroupBox2.Text = "LatarBelakang"
         ' 
-        ' Button3
+        ' btnUbahKatalis2
         ' 
-        Button3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button3.Font = New Font("Segoe UI", 9.0F)
-        Button3.Location = New Point(579, 165)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(85, 29)
-        Button3.TabIndex = 2
-        Button3.Text = "Ubah"
-        Button3.UseVisualStyleBackColor = True
+        btnUbahKatalis2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnUbahKatalis2.Font = New Font("Segoe UI", 9.0F)
+        btnUbahKatalis2.Location = New Point(579, 165)
+        btnUbahKatalis2.Name = "btnUbahKatalis2"
+        btnUbahKatalis2.Size = New Size(85, 29)
+        btnUbahKatalis2.TabIndex = 2
+        btnUbahKatalis2.Text = "Ubah"
+        btnUbahKatalis2.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
@@ -200,7 +194,7 @@ Partial Class Form1
         ' GroupBox3
         ' 
         GroupBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        GroupBox3.Controls.Add(Button6)
+        GroupBox3.Controls.Add(btnUbahKatalis3)
         GroupBox3.Controls.Add(Button4)
         GroupBox3.Controls.Add(Button5)
         GroupBox3.Controls.Add(txtKelanjutan)
@@ -212,16 +206,16 @@ Partial Class Form1
         GroupBox3.TabStop = False
         GroupBox3.Text = "Kelanjutan"
         ' 
-        ' Button6
+        ' btnUbahKatalis3
         ' 
-        Button6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button6.Font = New Font("Segoe UI", 9.0F)
-        Button6.Location = New Point(579, 165)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(85, 29)
-        Button6.TabIndex = 3
-        Button6.Text = "Ubah"
-        Button6.UseVisualStyleBackColor = True
+        btnUbahKatalis3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnUbahKatalis3.Font = New Font("Segoe UI", 9.0F)
+        btnUbahKatalis3.Location = New Point(579, 165)
+        btnUbahKatalis3.Name = "btnUbahKatalis3"
+        btnUbahKatalis3.Size = New Size(85, 29)
+        btnUbahKatalis3.TabIndex = 3
+        btnUbahKatalis3.Text = "Ubah"
+        btnUbahKatalis3.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
@@ -255,12 +249,24 @@ Partial Class Form1
         txtKelanjutan.Size = New Size(649, 131)
         txtKelanjutan.TabIndex = 0
         ' 
+        ' btnSimpan
+        ' 
+        btnSimpan.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnSimpan.AutoSize = True
+        btnSimpan.Location = New Point(503, 52)
+        btnSimpan.Name = "btnSimpan"
+        btnSimpan.Size = New Size(85, 29)
+        btnSimpan.TabIndex = 8
+        btnSimpan.Text = "Simpan"
+        btnSimpan.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         ClientSize = New Size(726, 759)
+        Controls.Add(btnSimpan)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
         Controls.Add(btnRandom)
@@ -290,17 +296,18 @@ Partial Class Form1
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TentangKataLeenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnUbahKatalis1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents btnRandom As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnUbahKatalis2 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents txtLatarBelakang As TextBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnUbahKatalis3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents txtKelanjutan As TextBox
+    Friend WithEvents btnSimpan As Button
 
 End Class
