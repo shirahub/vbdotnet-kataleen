@@ -39,10 +39,10 @@ Partial Class Form1
         Button2 = New Button()
         txtLatarBelakang = New TextBox()
         GroupBox3 = New GroupBox()
+        Button6 = New Button()
         Button4 = New Button()
         Button5 = New Button()
         txtKelanjutan = New TextBox()
-        Button6 = New Button()
         MenuStrip1.SuspendLayout()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
@@ -93,7 +93,7 @@ Partial Class Form1
         ' TentangKataLeenToolStripMenuItem
         ' 
         TentangKataLeenToolStripMenuItem.Name = "TentangKataLeenToolStripMenuItem"
-        TentangKataLeenToolStripMenuItem.Size = New Size(167, 22)
+        TentangKataLeenToolStripMenuItem.Size = New Size(180, 22)
         TentangKataLeenToolStripMenuItem.Text = "Tentang KataLeen"
         ' 
         ' GroupBox1
@@ -212,6 +212,17 @@ Partial Class Form1
         GroupBox3.TabStop = False
         GroupBox3.Text = "Kelanjutan"
         ' 
+        ' Button6
+        ' 
+        Button6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button6.Font = New Font("Segoe UI", 9.0F)
+        Button6.Location = New Point(579, 165)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(85, 29)
+        Button6.TabIndex = 3
+        Button6.Text = "Ubah"
+        Button6.UseVisualStyleBackColor = True
+        ' 
         ' Button4
         ' 
         Button4.Anchor = AnchorStyles.Top Or AnchorStyles.Right
@@ -243,17 +254,6 @@ Partial Class Form1
         txtKelanjutan.ScrollBars = ScrollBars.Vertical
         txtKelanjutan.Size = New Size(649, 131)
         txtKelanjutan.TabIndex = 0
-        ' 
-        ' Button6
-        ' 
-        Button6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button6.Font = New Font("Segoe UI", 9.0F)
-        Button6.Location = New Point(579, 165)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(85, 29)
-        Button6.TabIndex = 3
-        Button6.Text = "Ubah"
-        Button6.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 

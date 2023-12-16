@@ -40,11 +40,10 @@
         readRandomSentence()
     End Sub
 
-    Private Sub TentangKataLeenToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        'Dim aboutBoxForm As New AboutBox1()
+    Private Sub TentangKataLeenToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles TentangKataLeenToolStripMenuItem.Click
+        Dim aboutBoxForm As New AboutBox1()
 
         ' Tampilkan AboutBox sebagai dialog
-        'aboutBoxForm.ShowDialog()
+        aboutBoxForm.ShowDialog()
     End Sub
-
 End Class
